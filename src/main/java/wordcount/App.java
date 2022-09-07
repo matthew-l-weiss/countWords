@@ -25,10 +25,10 @@ public class App
                groupedOccurrences.put(entry.getValue(), stringList);
             });
 
-      for (Long key : groupedOccurrences.keySet()) {
-         Collection<String> collection = groupedOccurrences.get(key);
-         for (String occurrence : collection) {
-            System.out.println(key + " " + occurrence);
+      for (Long wordCount : groupedOccurrences.keySet()) {
+         Collection<String> words = groupedOccurrences.get(wordCount);
+         for (String word : words) {
+            System.out.println(wordCount + " " + word);
          }
       }
    }
